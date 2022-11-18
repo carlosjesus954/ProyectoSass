@@ -1,0 +1,7 @@
+@use '../base/variables' as v;
+h1{
+    color: v.$colorPrincipal;
+    font-size: 3rem;
+    font-family: v.$fuente__principal;
+    margin-left: 1rem;
+}
