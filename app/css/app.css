@@ -307,11 +307,101 @@ template {
   display: none;
 }
 
-h1 {
-  color: red;
-  font-size: 3rem;
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  object-fit: cover;
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
   font-family: "Monserrat", sans-serif;
-  margin-left: 1rem;
+}
+
+.header {
+  background-color: #4CB8B3;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+.header__h1 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.btns {
+  position: absolute;
+  top: 90%;
+  left: 80%;
+  width: 2rem;
+  height: 2rem;
+  z-index: 1;
+}
+.btns__toggle {
+  border-radius: 50%;
+  background: #4CB8B3;
+  box-shadow: 1rem 1rem 2rem #347d7a, -1rem -1rem 2rem #64f3ec;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem;
+  fill: #fff;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.nav {
+  position: fixed;
+  background-color: #4CB8B3;
+  width: 100%;
+  height: 30vh;
+  top: 70%;
+  left: 120%;
+  padding: 2rem;
+  transition: all 0.5s ease;
+}
+.nav__ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+.nav__link {
+  font-size: 1.2rem;
+  color: #fff;
+}
+.nav__socials {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 0;
+}
+.nav__icons {
+  width: 2.125rem;
+  fill: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+.activo {
+  left: 0%;
 }
 
 /*# sourceMappingURL=app.css.map */
