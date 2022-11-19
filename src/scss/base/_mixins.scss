@@ -12,3 +12,20 @@
     box-shadow: $eje $eje ($eje*2) #347d7a,
                 (-$eje) (-$eje) ($eje*2) #64f3ec;
 }
+
+@mixin telefonoM {
+  @media screen and (min-width: 510px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (min-width: 828px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1050px) {
+    @content;
+  }
+}

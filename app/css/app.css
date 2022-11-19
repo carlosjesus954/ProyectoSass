@@ -334,19 +334,33 @@ body {
   padding: 1rem 2rem;
   text-align: center;
 }
+@media screen and (min-width: 828px) {
+  .header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+}
 .header__h1 {
   margin: 0;
   padding: 0;
-  color: #fff;
+  color: rgb(32, 32, 32);
 }
 
 .btns {
   position: absolute;
-  top: 90%;
-  left: 80%;
+  bottom: 7%;
+  right: 10%;
   width: 2rem;
   height: 2rem;
   z-index: 1;
+}
+@media screen and (min-width: 828px) {
+  .btns {
+    display: none;
+  }
 }
 .btns__toggle {
   border-radius: 50%;
@@ -355,7 +369,7 @@ body {
   width: 3rem;
   height: 3rem;
   padding: 0.5rem;
-  fill: #fff;
+  fill: rgb(32, 32, 32);
   cursor: pointer;
   transition: all 0.5s ease;
 }
@@ -365,10 +379,28 @@ body {
   background-color: #4CB8B3;
   width: 100%;
   height: 30vh;
-  top: 70%;
+  bottom: 0%;
   left: 120%;
   padding: 2rem;
   transition: all 0.5s ease;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+@media screen and (min-width: 828px) {
+  .nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    left: 0%;
+    position: relative;
+    padding: 0;
+    height: 0;
+  }
 }
 .nav__ul {
   display: flex;
@@ -379,9 +411,14 @@ body {
   margin-bottom: 2rem;
   padding: 0;
 }
+@media screen and (min-width: 828px) {
+  .nav__ul {
+    margin-bottom: 0;
+  }
+}
 .nav__link {
   font-size: 1.2rem;
-  color: #fff;
+  color: rgb(32, 32, 32);
 }
 .nav__socials {
   display: flex;
@@ -393,7 +430,76 @@ body {
 }
 .nav__icons {
   width: 2.125rem;
-  fill: #fff;
+  fill: rgb(32, 32, 32);
+}
+
+.cabecera {
+  position: relative;
+  margin-bottom: 3rem;
+}
+.cabecera__video {
+  position: relative;
+  height: 38rem;
+  z-index: -1;
+  max-width: 100%;
+  object-fit: cover;
+}
+.cabecera__text {
+  position: absolute;
+  padding: 1rem;
+  top: 1rem;
+}
+@media screen and (min-width: 510px) {
+  .cabecera__text {
+    top: 8rem;
+  }
+}
+@media screen and (min-width: 828px) {
+  .cabecera__text {
+    top: 12rem;
+  }
+}
+.cabecera__titulo {
+  font-size: 5rem;
+  color: rgb(32, 32, 32);
+}
+.cabecera__subtitulo {
+  font-size: 1.6rem;
+  padding: 1rem;
+  color: rgb(32, 32, 32);
+  background-color: #F53756;
+  max-width: 28rem;
+}
+
+.concierto__img {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.concierto__textcontainer {
+  padding: 1rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: start;
+  align-items: start;
+  gap: 1.5rem;
+}
+@media screen and (min-width: 1050px) {
+  .concierto__textcontainer {
+    padding: 0;
+  }
+}
+.concierto__titulo {
+  color: rgb(32, 32, 32);
+  font-size: 2rem;
+}
+.concierto__subtitulo {
+  color: #F53756;
+  font-size: 1.2rem;
+}
+.concierto__texto {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  color: rgb(32, 32, 32);
 }
 
 .hidden {
@@ -402,6 +508,12 @@ body {
 
 .activo {
   left: 0%;
+}
+
+.wrapper {
+  max-width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*# sourceMappingURL=app.css.map */

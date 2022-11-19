@@ -1,65 +1,148 @@
-@use '../base/variables' as v;
-@use '../base/mixins' as m;
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
 
-.header{
-    background-color: v.$colorPrincipal;
-    padding: 1rem 2rem;
-    text-align: center;
-    &__h1{
-        margin: 0;
-        padding: 0;
-        color: v.$colorLetra;
-    }
+.header {
+  background-color: v.$colorPrincipal;
+  padding: 1rem 2rem;
+  text-align: center;
+  @include m.tablet{
+    @include m.flex(row nowrap, center, center, 2rem)
+  }
+  &__h1 {
+    margin: 0;
+    padding: 0;
+    color: v.$colorLetra;
+  }
 }
-.btns{
-    position: absolute;
-    top: 90%;
-    left: 80%;
-    width: 2rem;
-    height: 2rem;
-    z-index: 1;
-
-    &__toggle{
-        @include m.neo(50%, 1rem);
-        width: 3rem;
-        height: 3rem;
-        padding: 0.5rem;
-        fill: v.$colorLetra;
-        cursor: pointer;
-        transition: all 0.5s ease;
-    }
-}
-.nav{
-    position: fixed;
-    background-color: v.$colorPrincipal;
-    width: 100%;
-    height: 30vh;
-    top: 70%;
-    left: 120%;
-    padding: 2rem;
+.btns {
+  position: absolute;
+  bottom: 7%;
+  right: 10%;
+  width: 2rem;
+  height: 2rem;
+  z-index: 1;
+  @include m.tablet{
+    display: none
+  }
+  &__toggle {
+    @include m.neo(50%, 1rem);
+    width: 3rem;
+    height: 3rem;
+    padding: 0.5rem;
+    fill: v.$colorLetra;
+    cursor: pointer;
     transition: all 0.5s ease;
-    &__ul{
-        @include m.flex(row wrap, center, center, 2rem);
-        margin-bottom: 2rem;
-        padding: 0;
-    }
-    &__link{
-        font-size: 1.2rem;
-        color: v.$colorLetra;
-    }
-    &__socials{
-        @include m.flex(row wrap, center, center, 2rem);
-        padding:0;
-    }
-    &__icons{
-        width: 2.125rem;
-        fill: v.$colorLetra;
-    }
+  }
+}
+.nav {
+  position: fixed;
+  background-color: v.$colorPrincipal;
+  width: 100%;
+  height: 30vh;
+  bottom: 0%;
+  left: 120%;
+  padding: 2rem;
+  transition: all 0.5s ease;
+  @include m.flex(column nowrap, center, center, 2rem);
+  @include m.tablet{
+    @include m.flex(row nowrap, center, center, 2rem);
+    left: 0%;
+    position: relative;
+    padding: 0;
+    height:0;
+  }
+  &__ul {
+    @include m.flex(row wrap, center, center, 2rem);
+    margin-bottom: 2rem;
+    padding: 0;
+    @include m.tablet{
+        margin-bottom: 0;
+      }
+  }
+  &__link {
+    font-size: 1.2rem;
+    color: v.$colorLetra;
+  }
+  &__socials {
+    @include m.flex(row wrap, center, center, 2rem);
+    padding: 0;
+  }
+  &__icons {
+    width: 2.125rem;
+    fill: v.$colorLetra;
+  }
+  
 }
 
-.hidden{
-    display: none;
+.cabecera {
+  position: relative;
+  margin-bottom: 3rem;
+  &__video {
+    position: relative;
+    height: 38rem;
+    z-index: -1;
+    max-width: 100%;
+    object-fit: cover;
+    
+  }
+  &__text {
+    position: absolute;
+    padding: 1rem;
+    top: 1rem;
+
+    @include m.telefonoM {
+      top: 8rem;
+    }
+    @include m.tablet {
+        top: 12rem;
+      }
+  }
+  &__titulo {
+    font-size: 5rem;
+    color: v.$colorLetra;
+  }
+  &__subtitulo {
+    font-size: 1.6rem;
+    padding: 1rem;
+    color: v.$colorLetra;
+    background-color: v.$colorRojo;
+    max-width: 28rem;
+  }
 }
-.activo{
-    left: 0%;
+.concierto{
+    &__img{
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+    &__textcontainer{
+        padding: 1rem;
+        @include m.flex(column wrap, start,start,1.5rem);
+        @include m.desktop{
+            padding: 0;
+        }
+    }
+    &__titulo{
+        color: v.$colorLetra;
+        font-size: 2rem;
+    }
+    &__subtitulo{
+        color: v.$colorRojo;
+        font-size: 1.2rem;
+    }
+    &__texto{
+        font-size: 1.2rem;
+        letter-spacing: .1rem;
+        color: v.$colorLetra;
+    }
+}
+.hidden {
+  display: none;
+}
+.activo {
+  left: 0%;
+}
+.wrapper{
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
 }
