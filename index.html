@@ -1,121 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock & EDM Festival</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="app/css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="app/css/app.css" />
     <script defer src="js/app.js"></script>
-</head>
-<body>
-    <header class="header wrapper">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__global wrapper">
         <h1 class="header__h1">Rock & EDM Festival</h1>
         <div class="header__btns btns">
-            <svg xmlns="http://www.w3.org/2000/svg"fill="currentColor" class="btns__toggle btns__burguer" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg"fill="currentColor" class="btns__toggle btns__close hidden" viewBox="0 0 16 16">
-                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
-              </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="btns__toggle btns__burguer"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="btns__toggle btns__close hidden"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+            />
+          </svg>
         </div>
         <nav class="header__nav nav">
-            <ul class="nav__ul">
-                <li class="nav__li"> <a href="#" class="nav__link">Line Up</a></li>
-                <li class="nav__li"> <a href="#" class="nav__link">Galería</a></li>
-                <li class="nav__li"> <a href="#" class="nav__link">Boletos</a></li>
-            </ul>
-            <ul class="nav__socials">
-                <li class="nav__li"> <a href="#" class="nav__redes">
-                    <svg xmlns="http://www.w3.org/2000/svg"fill="currentColor" class="nav__icons" viewBox="0 0 16 16">
-                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                      </svg>
-                </a> </li>
-                <li class="nav__li"> <a href="#" class="nav__redes">
-                    <svg xmlns="http://www.w3.org/2000/svg"fill="currentColor" class="nav__icons" viewBox="0 0 16 16">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                      </svg>
-                </a> </li>
-            </ul>
+          <ul class="nav__ul">
+            <li class="nav__li"><a href="#" class="nav__link">Line Up</a></li>
+            <li class="nav__li"><a href="#" class="nav__link">Galería</a></li>
+            <li class="nav__li"><a href="#" class="nav__link">Boletos</a></li>
+          </ul>
+          <ul class="nav__socials">
+            <li class="nav__li">
+              <a href="#" class="nav__redes">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="nav__icons"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="nav__li">
+              <a href="#" class="nav__redes">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="nav__icons"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
         </nav>
+      </div>
     </header>
-    <main class="main wrapper">
-        <section class="main__cabecera cabecera">
-            <video src="video/concierto.mp4" class="cabecera__video" autoplay loop></video>
-            <div class="cabecera__text">
-                <h2 class="cabecera__titulo">Rock & EDM Festival</h2>
-                <h3 class="cabecera__subtitulo">Julio 2022, Guadalajara, México.</h3>
-            </div>
-        </section>
-        <section class="main__concierto concierto">
-            <img src="img/imagen_vocalista.jpg" alt="Vocalista" class="concierto__img">
-            <div class="concierto__textcontainer">
-                <h2 class="concierto__titulo">Rock & EDM Festival</h2>
-                <h3 class="concierto__subtitulo">Julio 2022, Guadalajara, Méxicos</h3>
-                <p class="concierto__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam itaque necessitatibus, obcaecati nam accusantium repellat sint facere culpa praesentium doloribus facilis a, natus ex laborum nobis nemo eligendi. Alias, aut.</p>
-            </div>
-        </section>
-        <section class="main__lineup lineup">
-            <h2 class="lineup__h2">
-                Line Up
-            </h2>
-            <span class="lineup__day">VIERNES 21</span>
-            <div class="lineup__container">
-                <h3 class="lineup__h3">
-                    Escenario Rock
-                </h3>
-                <img src="img/icono_rock.png" alt="Guitarra Rock" class="lineup__icon">
-                <div class="lineup__textcontainer">
-                    <span class="lineup__horarios">24:00 | Metallica</span>
-                    <span class="lineup__horarios">22:00 | Pearl Jam</span>
-                    <span class="lineup__horarios">20:00 | Korn</span>
-                    <span class="lineup__horarios">19:00 | Muse</span>
-                    <span class="lineup__horarios">18:00 | Breaking Benjamin</span>
-                    <span class="lineup__horarios">24:00 | 30 Seconds to Mars</span>
+    <main class="main">
+      <section class="main__cabecera cabecera">
+        <video
+          src="video/concierto.mp4"
+          class="cabecera__video"
+          autoplay
+          loop
+        ></video>
+        <div class="cabecera__text">
+          <h2 class="cabecera__titulo">Rock & EDM Festival</h2>
+          <h3 class="cabecera__subtitulo">Julio 2022, Guadalajara, México.</h3>
+        </div>
+      </section>
+      <section class="main__concierto concierto wrapper">
+        <img
+          src="img/imagen_vocalista.jpg"
+          alt="Vocalista"
+          class="concierto__img"
+        />
+        <div class="concierto__textcontainer">
+          <h2 class="concierto__titulo">Rock & EDM Festival</h2>
+          <h3 class="concierto__subtitulo">Julio 2022, Guadalajara, Méxicos</h3>
+          <p class="concierto__texto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            itaque necessitatibus, obcaecati nam accusantium repellat sint
+            facere culpa praesentium doloribus facilis a, natus ex laborum nobis
+            nemo eligendi. Alias, aut.
+          </p>
+        </div>
+      </section>
+      <section class="main__lineup lineup">
+        <h2 class="lineup__h2">Line Up</h2>
+        <span class="lineup__day">VIERNES 21</span>
+        <div class="lineup__container wrapper">
+          <h3 class="lineup__h3">Escenario Rock</h3>
+          <img
+            src="img/icono_rock.png"
+            alt="Guitarra Rock"
+            class="lineup__icon"
+          />
+          <div class="lineup__textcontainer">
+            <span class="lineup__horarios">24:00 | Metallica</span>
+            <span class="lineup__horarios">22:00 | Pearl Jam</span>
+            <span class="lineup__horarios">20:00 | Korn</span>
+            <span class="lineup__horarios">19:00 | Muse</span>
+            <span class="lineup__horarios">18:00 | Breaking Benjamin</span>
+            <span class="lineup__horarios">24:00 | 30 Seconds to Mars</span>
+          </div>
+        </div>
+        <span class="lineup__day">SÁBADO 22</span>
+        <div class="lineup__container lineup__container--margin wrapper">
+          <h3 class="lineup__h3">Escenario EDM</h3>
+          <img src="img/icono_edm.png" alt="Edm" class="lineup__icon" />
+          <div class="lineup__textcontainer">
+            <span class="lineup__horarios">24:00 | Deadmau5</span>
+            <span class="lineup__horarios">22:00 | Tiesto</span>
+            <span class="lineup__horarios">20:00 | HardWell</span>
+            <span class="lineup__horarios">19:00 | Dash Berlin</span>
+            <span class="lineup__horarios">18:00 | Fedde Legrand</span>
+            <span class="lineup__horarios">24:00 | Audien</span>
+          </div>
+        </div>
+      </section>
+      <section class="main__galeria galeria">
+        <h2 class="galeria__h2">Galería</h2>
+        <div class="galeria__container wrapper">
+          <img src="img/grande/1.jpg" alt="" class="galeria__img" />
+          <img src="img/grande/2.jpg" alt="" class="galeria__img" />
+          <img src="img/grande/3.jpg" alt="" class="galeria__img" />
+          <img src="img/grande/4.jpg" alt="" class="galeria__img" />
+          <img src="img/grande/5.jpg" alt="" class="galeria__img" />
+          <img src="img/grande/6.jpg" alt="" class="galeria__img" />
+          <img src="img/grande/7.jpg" alt="" class="galeria__img" />
+          <img src="img/grande/8.jpg" alt="" class="galeria__img" />
+          <img src="img/grande/9.jpg" alt="" class="galeria__img" />
+          <img src="img/grande/10.jpg" alt="" class="galeria__img" />
+          <img src="img/grande/11.jpg" alt="" class="galeria__img" />
+          <img src="img/grande/12.jpg" alt="" class="galeria__img" />
+        </div>
+        <div class="galeria__muestra">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="galeria__close"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+            />
+          </svg>
+        </div>
+      </section>
+
+      <section class="main__boletos boletos">
+        <h2 class="boletos__h2">Boletos</h2>
+        <div class="boletos__global">
+            <div class="boletos__textcontainer">
+                <span class="boletos__dia">Pase 1 Día</span>
+                <div class="boletos__container">
+                  <span class="boletos__incluye">INCLUYE</span>
+                  <span class="boletos__text">Acceso a ambos escenarios</span>
+                  <span class="boletos__text">Comida y Bebida</span>
+                  <span class="boletos__precio">$100</span>
                 </div>
-            </div>
-            <span class="lineup__day">SÁBADO 22</span>
-            <div class="lineup__container lineup__container--margin">
-                <h3 class="lineup__h3">
-                    Escenario EDM
-                </h3>
-                <img src="img/icono_edm.png" alt="Edm" class="lineup__icon">
-                <div class="lineup__textcontainer">
-                    <span class="lineup__horarios">24:00 | Deadmau5</span>
-                    <span class="lineup__horarios">22:00 | Tiesto</span>
-                    <span class="lineup__horarios">20:00 | HardWell</span>
-                    <span class="lineup__horarios">19:00 | Dash Berlin</span>
-                    <span class="lineup__horarios">18:00 | Fedde Legrand</span>
-                    <span class="lineup__horarios">24:00 | Audien</span>
+              </div>
+              <div class="boletos__textcontainer">
+                <span class="boletos__dia">Pase 2 Día</span>
+                <div class="boletos__container">
+                  <span class="boletos__incluye">INCLUYE</span>
+                  <span class="boletos__text">Acceso a ambos escenarios</span>
+                  <span class="boletos__text">Camisa del Evento</span>
+                  <span class="boletos__text">Comida y Bebida</span>
+                  <span class="boletos__text">Acceso VIP</span>
+                  <span class="boletos__precio">$100</span>
                 </div>
-            </div>
-        </section>
-        <section class="main__galeria galeria">
-            <h2 class="galeria__h2">Galería</h2>
-            <div class="galeria__container">
-                <img src="img/grande/1.jpg" alt="" class="galeria__img">
-                <img src="img/grande/2.jpg" alt="" class="galeria__img">
-                <img src="img/grande/3.jpg" alt="" class="galeria__img">
-                <img src="img/grande/4.jpg" alt="" class="galeria__img">
-                <img src="img/grande/5.jpg" alt="" class="galeria__img">
-                <img src="img/grande/6.jpg" alt="" class="galeria__img">
-                <img src="img/grande/7.jpg" alt="" class="galeria__img">
-                <img src="img/grande/8.jpg" alt="" class="galeria__img">
-                <img src="img/grande/9.jpg" alt="" class="galeria__img">
-                <img src="img/grande/10.jpg" alt="" class="galeria__img">
-                <img src="img/grande/11.jpg" alt="" class="galeria__img">
-                <img src="img/grande/12.jpg" alt="" class="galeria__img">
-            </div>
-            <div class="galeria__muestra">
-                
-                <svg xmlns="http://www.w3.org/2000/svg"fill="currentColor" class="galeria__close" viewBox="0 0 16 16">
-                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
-                  </svg>
-            </div>
-        </section>
+              </div>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
