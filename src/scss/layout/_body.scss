@@ -2,17 +2,7 @@
 @use "../base/mixins" as m;
 
 
-.hidden {
-  display: none;
-}
-.activo {
-  left: 0%;
-}
-.wrapper{
-    max-width: 1050px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 .header {
   background-color: v.$colorPrincipal;
   padding: 1rem 2rem;
@@ -200,10 +190,63 @@
   @include m.flex(column nowrap, center,center,2rem);
 
   &__h2{
-    
+    font-size: 1.4rem;
   }
   &__container{
-
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    @include m.tablet{
+      grid-template-columns: repeat(4,1fr);
+    }
+    @include m.desktop{
+      grid-template-columns: repeat(6,1fr);
+      padding: 0;
+    }
   }
+  &__img{
+    cursor: pointer;
+    height: 9rem;
+  }
+  &__muestra{
+    position: fixed;
+    @include m.flex(column wrap, center,center, 5rem);
+    background-color:rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    width: 100%;
+    backdrop-filter: blur(6px);
+    z-index: 3;
+    padding: 1rem;
+    top: 0;
+    left: 120%;
+    transition: all 0.5s ease;
+  }
+  &__seleccionado{
+    width: 100%;
+    max-width: 35rem;
+    height: 50%;
+    @include m.tablet{
+      height: 35rem;
+    }
+    object-fit: cover;
+  }
+  &__close{
+    width: 3.125rem;
+    fill: v.$colorLetra2;
+    cursor: pointer;
+  }
+}
 
+
+.hidden {
+  display: none;
+}
+.activo {
+  left: 0%;
+}
+.wrapper{
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
 }
