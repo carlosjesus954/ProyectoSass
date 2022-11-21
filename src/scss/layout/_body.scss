@@ -18,8 +18,8 @@
 }
 .btns {
   position: fixed;
-  bottom: 7%;
-  right: 10%;
+  bottom: 10%;
+  right: 15%;
   width: 2rem;
   height: 2rem;
   z-index: 2;
@@ -74,7 +74,7 @@
     padding: 0;
   }
   &__icons {
-    width: 2.125rem;
+    width: 1.6rem;
     fill: v.$colorLetra;
   }
 }
@@ -234,20 +234,21 @@
   text-align: center;
   position: relative;
   color: v.$colorLetra2;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 0.5rem;
-  padding: 1rem;
   @include m.tablet{
     background-size: 100%;
   }
   &__h2 {
-    margin-bottom: 0.5rem
+    padding-top: 1rem;
+
   }
   &__global{
-    @include m.tablet{
-      position: relative;
-      top: 0;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+    @include m.telefonoL{
+      
       display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 1rem
@@ -259,8 +260,6 @@
   &__container {
     background-color: rgba(0, 0, 0, 0.596);
     backdrop-filter: blur(5px);
-    
-    max-width: 30rem;
     @include m.flex(column nowrap, center,center,2rem);
     padding: 1rem;
     width: 100%;
@@ -286,6 +285,18 @@
     font-size: 1.5rem;
   }
 }
+.footer{
+  background-color: v.$colorPrincipal;
+  &__global{
+    @include m.flex(row nowrap, space-around, center, 1rem);
+    padding: 1rem;
+  }
+  &__copy{
+    color: v.$colorLetra;
+  }
+}
+
+
 .hidden {
   display: none;
 }

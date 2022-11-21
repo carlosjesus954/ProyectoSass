@@ -18,6 +18,11 @@
     @content;
   }
 }
+@mixin telefonoL {
+  @media screen and (min-width: 550px) {
+    @content;
+  }
+}
 @mixin tablet {
   @media screen and (min-width: 828px) {
     @content;

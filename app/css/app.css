@@ -353,8 +353,8 @@ body {
 
 .btns {
   position: fixed;
-  bottom: 7%;
-  right: 10%;
+  bottom: 10%;
+  right: 15%;
   width: 2rem;
   height: 2rem;
   z-index: 2;
@@ -435,7 +435,7 @@ body {
   padding: 0;
 }
 .nav__icons {
-  width: 2.125rem;
+  width: 1.6rem;
   fill: rgb(32, 32, 32);
 }
 
@@ -623,10 +623,6 @@ body {
   text-align: center;
   position: relative;
   color: rgb(248, 248, 248);
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 0.5rem;
-  padding: 1rem;
 }
 @media screen and (min-width: 828px) {
   .boletos {
@@ -634,12 +630,17 @@ body {
   }
 }
 .boletos__h2 {
-  margin-bottom: 0.5rem;
+  padding-top: 1rem;
 }
-@media screen and (min-width: 828px) {
+.boletos__global {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+}
+@media screen and (min-width: 550px) {
   .boletos__global {
-    position: relative;
-    top: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -655,7 +656,6 @@ body {
 .boletos__container {
   background-color: rgba(0, 0, 0, 0.596);
   backdrop-filter: blur(5px);
-  max-width: 30rem;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -683,6 +683,21 @@ body {
   display: block;
   width: 100%;
   font-size: 1.5rem;
+}
+
+.footer {
+  background-color: #4CB8B3;
+}
+.footer__global {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+.footer__copy {
+  color: rgb(32, 32, 32);
 }
 
 .hidden {
