@@ -22,6 +22,7 @@ function cerrarMenu(){
     btnClose.classList.add('hidden')
     btnBurguer.classList.remove('hidden')
 }
+
 navElements.forEach((li) => {
     li.addEventListener('click',()=>{
         nav.classList.remove('activo')
