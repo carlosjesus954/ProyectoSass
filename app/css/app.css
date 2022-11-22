@@ -617,17 +617,10 @@ body {
 }
 
 .boletos {
-  background-image: url(../../../img/grande/3.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: #F53756;
   text-align: center;
   position: relative;
   color: rgb(248, 248, 248);
-}
-@media screen and (min-width: 828px) {
-  .boletos {
-    background-size: 100%;
-  }
 }
 .boletos__h2 {
   padding-top: 1rem;
@@ -669,7 +662,7 @@ body {
 }
 .boletos__incluye {
   text-align: center;
-  background-color: #F53756;
+  background-color: #4CB8B3;
   width: 100%;
 }
 .boletos__text {
@@ -678,7 +671,7 @@ body {
   width: 100%;
 }
 .boletos__precio {
-  background-color: #F53756;
+  background-color: #4CB8B3;
   text-align: center;
   display: block;
   width: 100%;

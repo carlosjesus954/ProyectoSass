@@ -228,15 +228,10 @@
 }
 
 .boletos {
-  background-image: url(../../../img/grande/3.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: v.$colorRojo;
   text-align: center;
   position: relative;
   color: v.$colorLetra2;
-  @include m.tablet{
-    background-size: 100%;
-  }
   &__h2 {
     padding-top: 1rem;
 
@@ -269,7 +264,7 @@
   }
   &__incluye{
     text-align: center;
-    background-color: v.$colorRojo;
+    background-color: v.$colorPrincipal;
     width: 100%;
   }
   &__text {
@@ -278,7 +273,7 @@
     width: 100%;
   }
   &__precio {
-    background-color: v.$colorRojo;
+    background-color: v.$colorPrincipal;
     text-align: center;
     display: block;
     width: 100%;
